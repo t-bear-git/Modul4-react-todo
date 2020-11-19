@@ -4,7 +4,7 @@ function Header() {
   return (
     <header style={headerStyle}>
       <h1>TodoList</h1>
-      <Link style={linkStyle} to="/">
+      <Link style={linkStyle} to="/Modul4-react-todo">
         Home
       </Link>{' '}
       |{' '}
