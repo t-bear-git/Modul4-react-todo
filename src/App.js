@@ -60,7 +60,6 @@ class App extends React.Component {
           <div className="container">
             <Header />
             <Route
-              exact
               path="/Modul4-react-todo/"
               render={(props) => (
                 <React.Fragment>
