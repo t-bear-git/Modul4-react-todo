@@ -37,8 +37,11 @@ class TodoItem extends React.Component {
 // Proptypes
 TodoItem.propTypes = {
   todo: PropTypes.object.isRequired,
+  markComplete: PropTypes.func.isRequired,
+  deleteTodo: PropTypes.func.isRequired,
 };
 
+// Styling var for deletebutton
 const btnStyle = {
   background: 'red',
   color: '#fff',

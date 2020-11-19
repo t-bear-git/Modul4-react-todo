@@ -5,7 +5,6 @@ import PropTypes from 'prop-types';
 class Todos extends React.Component {
   render() {
     const todoElements = this.props.todos.map((todo) => {
-      // return <div>{todo.title}</div>;
       return (
         <TodoItem
           key={todo.id}
@@ -23,6 +22,8 @@ class Todos extends React.Component {
 // Proptypes
 Todos.propTypes = {
   todos: PropTypes.array.isRequired,
+  markComplete: PropTypes.func.isRequired,
+  deleteTodo: PropTypes.func.isRequired,
 };
 
 export default Todos;
